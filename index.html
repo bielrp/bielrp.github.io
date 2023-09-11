@@ -19,12 +19,6 @@
             padding: 0;
             margin: 0;
         }
-            #div_Classificaodoacidente{
-                margin: 10px!important;
-            }
-            #div_Classificaodoacidente .filterlabel{
-                margin: 0px!important;
-            }
         </style>
         <title>Mapa de Acidentes Ambientais 2023</title>
     </head>
@@ -581,21 +575,13 @@
         var col1 = document.createElement('div');
         col1.className="col9";
         col1.id = "mapWindow";
-        col1.style.height = "100%";
-        col1.style.width = "100%";
+        col1.style.height = "99%";
+        col1.style.width = "80%";
         col1.style.display = "inline-block";
         var col2 = document.createElement('div');
         col2.className="col3";
         col2.id = "menu";
         col2.style.display = "inline-block";
-        col2.style.position = "absolute";
-        col2.style.bottom = "3vh";
-        col2.style.left = "10px";
-        col2.style.z-index = "9999";
-        col2.style.box-shadow = "0 1px 5px rgba(0,0,0,0.4)";
-        col2.style.background = "#fff";
-        col2.style.border-radius = "5px";
-        col2.style.width = "157px";
         mapDiv.parentNode.insertBefore(row, mapDiv);
         document.getElementById("all").appendChild(col1);
         document.getElementById("all").appendChild(col2);
